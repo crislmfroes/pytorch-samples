@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+pylint = "<2.0.0"
+"autopep8" = "*"
+
+[packages]
+torch = "*"
+torchvision = "*"
+matplotlib = "*"
+
+[requires]
+python_version = "3.6"
