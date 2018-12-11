@@ -265,7 +265,6 @@ test_encoder_outputs, test_encoder_hidden = traced_encoder(test_seq, test_seq_le
 test_decoder_hidden = test_encoder_hidden[:decoder.n_layers]
 test_decoder_input = torch.LongTensor(1, 1).random_(0, voc.num_words)
 
-print(test_encoder_outputs)
 
 traced_decoder = torch.jit.trace(decoder, (test_decoder_input, test_decoder_hidden, test_encoder_outputs))
 
